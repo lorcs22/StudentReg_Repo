@@ -85,6 +85,19 @@ public class Student {
         this.courses = courses;
     }
     
+    //setting & adding modules / courses to the array lists in Student
+    public void addModule(Module mod){
+        ArrayList<Module> addMod = modules;
+        addMod.add(mod);
+        setModule(addMod);
+    }
+    
+     public void addCourse(Course cour){
+     ArrayList<Course> addCour = courses;
+     addCour.add(cour);
+     setCourse(addCour);
+    }
+    
     //print username 
     @Override
     public String toString(){
