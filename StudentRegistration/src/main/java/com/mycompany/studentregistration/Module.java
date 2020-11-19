@@ -23,6 +23,10 @@ public class Module {
         this.courses = new ArrayList<>();
     }
     
+    public Module(){
+        
+    }
+    
     //accessor methods
     public String getMName(){
         return mName;

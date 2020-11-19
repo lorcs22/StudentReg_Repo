@@ -28,6 +28,10 @@ public class Course {
         this.students = new ArrayList<>();
     }
     
+    public Course(){
+        
+    }
+    
     //Accessor Methods
     public String getCName(){
         return cName;
@@ -74,10 +78,5 @@ public class Course {
         setStudents(addStu);
     }
     
-    @Override
-    public String toString(){
-        String s = "Course:"+cName;
-        return s;
-    }
 }
 

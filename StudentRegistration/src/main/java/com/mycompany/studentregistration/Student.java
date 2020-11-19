@@ -16,19 +16,21 @@ public class Student {
     protected int age;
     protected String dob;
     protected int sID;
-    protected String username;
     protected ArrayList<Module> modules;
     protected ArrayList<Course> courses;
     
     //Student Constructor
-    public Student(String name, int age, String dob, int sID, String username){
+    public Student(String name, int age, String dob, int sID){
         this.name = name;
         this.age = age;
         this.dob = dob;
         this.sID = sID;
-        this.username = username;
         this.modules = new ArrayList<>();
         this.courses = new ArrayList<>();
+    }
+    
+    public Student(){
+        
     }
     
     //accessor methods
@@ -98,11 +100,5 @@ public class Student {
      setCourse(addCour);
     }
     
-    //print username 
-    @Override
-    public String toString(){
-        String s = "Username: "+username;
-        return s;
-    }
 }
 
