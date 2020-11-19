@@ -13,27 +13,13 @@ import static org.junit.Assert.*;
  * @author lorca
  */
 public class StudentTest {
-    //creating mock data for test class  
+    //creating an instance of Student for testing... 
     private final String name = "Lorcan";
     private final int age = 22;
     private final String dob = "31/03/1998";
     private final int sID = 16422524;
     private final Student stu = new Student(name, age, dob, sID);
 
-    /**
-     * Test of get username methods, of class Student.
-     */
-    
-    //test instance of Student class
-    //using assertEquals to compare expected value with result
-    @Test 
-    public void createStudent(){
-        Student stu = new Student(name ,  age,  dob,  sID);
-        assertEquals(name, stu.name);
-        assertEquals(age, stu.age);
-        assertEquals(dob, stu.dob);
-        assertEquals(sID, stu.sID);
-    }
     
     //testing getUsername method
     @Test
@@ -62,6 +48,8 @@ public class StudentTest {
         stu.setID(sID);
         assertEquals(sID, stu.sID);
     }
+    
+    //testing arraylist methods
   
  
 }
