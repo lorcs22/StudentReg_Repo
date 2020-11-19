@@ -58,6 +58,14 @@ public class Course {
         this.cName = cName;
     }
     
+    public void setStartDate(LocalDate startDate){
+        this.startDate = startDate;
+    }
+    
+    public void setEndDate(LocalDate endDate){
+        this.endDate = endDate;
+    }
+    
     public void setModules(ArrayList<Module> modules){
         this.modules = modules;
     }
