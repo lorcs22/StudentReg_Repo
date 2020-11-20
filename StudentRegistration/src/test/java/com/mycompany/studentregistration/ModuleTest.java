@@ -29,4 +29,19 @@ public class ModuleTest {
         assertEquals(id, mod.mID);
     }
     
+    @Test
+    public void testAddInfo(){
+        Student stu = new Student();
+        Course cour = new Course();
+        //adding student and cour instances to module
+       mod.addStudents(stu);
+       mod.addCourses(cour);
+        ArrayList<Student> stus = mod.getStudents();
+        ArrayList<Course> cours = mod.getCourses();
+        //checking if 1 instance of each have been added to Module
+        assertEquals(1, stus.size());
+        assertEquals(1, cours.size());
+        
+    }
+    
 }

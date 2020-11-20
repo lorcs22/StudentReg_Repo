@@ -94,10 +94,10 @@ public class Student {
         setModule(addMod);
     }
     
-     public void addCourse(Course cour){
-     ArrayList<Course> addCour = courses;
-     addCour.add(cour);
-     setCourse(addCour);
+    public void addCourse(Course cour){
+        ArrayList<Course> addCour = courses;
+        addCour.add(cour);
+        setCourse(addCour);
     }
     
 }

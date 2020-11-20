@@ -50,6 +50,22 @@ public class StudentTest {
     }
     
     //testing arraylist methods
-  
+    @Test
+    public void testAddInfo(){
+        //initialize instance of module and course
+        Module mod = new Module();
+        Course cour = new Course();
+        
+        //adding course and module to student instance
+        stu.addCourse(cour);
+        stu.addModule(mod);
+        
+     
+        ArrayList<Module> mods = stu.getModules();
+        ArrayList<Course> cours = stu.getCourses();
+        //testing if addMod() has successfully added 1 instance to arraylist mods
+        assertEquals(1, mods.size());
+        assertEquals(1, cours.size());
+    }
  
 }

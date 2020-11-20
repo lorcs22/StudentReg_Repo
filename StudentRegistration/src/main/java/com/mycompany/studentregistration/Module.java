@@ -27,6 +27,7 @@ public class Module {
         
     }
     
+    
     //accessor methods
     public String getMName(){
         return mName;
