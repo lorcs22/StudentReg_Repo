@@ -86,5 +86,11 @@ public class Course {
         setStudents(addStu);
     }
     
+    @Override
+    public String toString(){
+        String s = " Course Name: "+cName+" Start: "+startDate+" End: "+endDate;
+        return s;
+    }
+    
 }
 

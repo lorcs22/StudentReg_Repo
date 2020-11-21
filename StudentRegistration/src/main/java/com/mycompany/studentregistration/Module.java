@@ -74,4 +74,10 @@ public class Module {
         addCour.add(cour);
         setCourses(addCour);
     }
+    
+    @Override
+    public String toString(){
+        String s = " Module: "+mName;
+        return s;
+    }
 }

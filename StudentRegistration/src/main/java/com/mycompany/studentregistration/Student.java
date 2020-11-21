@@ -100,5 +100,11 @@ public class Student {
         setCourse(addCour);
     }
     
+    @Override
+    public String toString(){
+        String s = "Name: "+name+"Username: "+getUsername();
+        return s;
+    }
+    
 }
 
