@@ -88,7 +88,7 @@ public class Course {
     
     @Override
     public String toString(){
-        String s = " Course Name: "+cName+" Start: "+startDate+" End: "+endDate;
+        String s = " Course-Name: "+cName+" Start-Date: "+startDate+" End-Date: "+endDate;
         return s;
     }
     

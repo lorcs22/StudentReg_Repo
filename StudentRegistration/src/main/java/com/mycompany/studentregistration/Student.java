@@ -102,7 +102,7 @@ public class Student {
     
     @Override
     public String toString(){
-        String s = "Name: "+name+"Username: "+getUsername();
+        String s = " Name: "+name+" Username: "+getUsername()+" DOB: "+dob+" sID: "+sID;
         return s;
     }
     
