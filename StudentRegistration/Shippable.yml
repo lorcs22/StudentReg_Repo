@@ -1,0 +1,22 @@
+## YAML Shippable Config for Student Reg.
+---
+language: java
+
+jdk:
+  - oraclejdk8
+  
+## Continuous Integration configuration
+build:
+  ci:
+    - shippable_retry mvn install -DskipTests=true
+    # Create folders for test and code coverage
+    - mkdir -p shippable/codecoverage
+    - mkdir -p shippable/testresults
+    - mvn clean cobertura:cobertura
+ 
+    - cp -r target shippable/codecoverage
+    - cp -r target shippable/testresults
+    
+    - mvn clean test jacoco:report
+
+
